@@ -1,6 +1,8 @@
 use strict;
 use warnings;
-use ALX::EN81346;
+
+use 5.008;
+use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME          => 'ALX::EN81346',
@@ -12,9 +14,12 @@ WriteMakefile(
         : ()),
     PL_FILES      => {},
     PREREQ_PM     => {
-        'Log::Log4perl'    => 1.55,
+        'Log::Log4perl' => 1.55,
     },
     TEST_REQUIRES => {
         'Test::More' => 1.001014,
     },
+    EXE_FILES     => {
+        'script/FixItFelix.pl',
+    }
 );
