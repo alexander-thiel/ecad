@@ -7,7 +7,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME          => 'ALX::EN81346',
     AUTHOR        => q{Alexander Thiel <alex@alx-development.de>},
-    VERSION_FROM  => 'lib/ALX/EN81346.pm',
+    VERSION_FROM  => 'lib/ECAD/EN81346.pm',
     ABSTRACT      => 'Interpreter for EN81346 encoded technical reference identifiers',
     LICENSE       => 'mit',
     PL_FILES      => {},
